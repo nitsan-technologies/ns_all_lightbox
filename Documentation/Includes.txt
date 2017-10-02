@@ -1,0 +1,45 @@
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. This is 'Includes.txt'. It is included at the very top of each and
+   every ReST source file in this documentation project (= manual).
+
+
+.. ==================================================
+.. DEFINE SOME TEXT ROLES
+.. --------------------------------------------------
+
+.. role::   typoscript(code)
+
+.. role::   ts(typoscript)
+   :class:  typoscript
+
+.. role::   php(code)
+
+.. highlight:: php
+
+.. |img-1|      image:: /Images/Administration/TYPO3_All_In_One_Lightbx_Modalbox_Extension_NITSAN_Banner_Preview.jpg
+.. :border: 1
+.. :align: left
+
+.. |img-2|      image:: /Images/Administration/TYPO3_All_In_One_Lightbx_Modalbox_Extension_NITSAN_Backend_Install_Extensions.png
+.. :border: 1
+.. :align: left
+
+.. |img-3|      image:: /Images/Administration/TYPO3_All_In_One_Lightbx_Modalbox_Extension_NITSAN_Backend_Include_Static_Template.png
+.. :border: 1
+.. :align: left
+
+.. |img-4|      image:: /Images/Administration/TYPO3_All_In_One_Lightbx_Modalbox_Extension_NITSAN_Backend_Select_Lightbox_Modalbox_Effect_Type.png
+.. :border: 1
+.. :align: left
+
+.. |img-5|      image:: /Images/Administration/TYPO3_All_In_One_Lightbx_Modalbox_Extension_NITSAN_Backend_Select_Enlarge_on_Click.png
+.. :border: 1
+.. :align: left
+
+.. |img-6|      image:: /Images/Administration/TYPO3_All_In_One_Lightbx_Modalbox_Extension_NITSAN_Frontend_Live_Demo_Preview.png
+.. :border: 1
+.. :align: left
