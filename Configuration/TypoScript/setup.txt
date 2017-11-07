@@ -1,50 +1,104 @@
-[globalVar = LIT:lightbox = {$plugin.tx_nsalllightbox.settings.type}]
-	<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/lightbox.txt" />
-[global]
+[compatVersion = 8.7]
+	[globalVar = LIT:lightbox = {$plugin.tx_nsalllightbox.settings.type}] 
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-8/lightbox.txt" />
+	[global]
 
-[globalVar = LIT:fancybox = {$plugin.tx_nsalllightbox.settings.type}]
-	<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/fancybox2.txt" />
-[global]
+	[globalVar = LIT:fancybox = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-8/fancybox2.txt" />
+	[global]
 
-[globalVar = LIT:colorbox = {$plugin.tx_nsalllightbox.settings.type}]
-	<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/colorbox.txt" />
-[global]
+	[globalVar = LIT:colorbox = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-8/colorbox.txt" />
+	[global]
 
-[globalVar = LIT:darkbox = {$plugin.tx_nsalllightbox.settings.type}]
-	<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/darkbox.txt" />
-[global]
+	[globalVar = LIT:darkbox = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-8/darkbox.txt" />
+	[global]
 
-[globalVar = LIT:prettyphoto = {$plugin.tx_nsalllightbox.settings.type}]
-	<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/prettyphoto.txt" />
-[global]
+	[globalVar = LIT:prettyphoto = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-8/prettyphoto.txt" />
+	[global]
 
-[globalVar = LIT:magnificpopups = {$plugin.tx_nsalllightbox.settings.type}]
-	<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/magnificpopup.txt" />
-[global]
+	[globalVar = LIT:magnificpopups = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-8/magnificpopup.txt" />
+	[global]
 
-tt_content.textmedia >
-tt_content.textmedia =< lib.fluidContent
-tt_content.textmedia {
-	templateName = Textmedia
-	dataProcessing {
-		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-		10 {
-			references.fieldName = assets
+	tt_content.textmedia >
+	tt_content.textmedia =< lib.contentElement
+	tt_content.textmedia {
+		templateName = Textmedia
+		dataProcessing {
+			10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			10 {
+				references.fieldName = assets
+			}
+			20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
+			20 {
+				maxGalleryWidth = {$styles.content.textmedia.maxW}
+				maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
+				columnSpacing = {$styles.content.textmedia.columnSpacing}
+				borderWidth = {$styles.content.textmedia.borderWidth}
+				borderPadding = {$styles.content.textmedia.borderPadding}
+			}
 		}
-		20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
-		20 {
-			maxGalleryWidth = {$styles.content.textmedia.maxW}
-			maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
-			columnSpacing = {$styles.content.textmedia.columnSpacing}
-			borderWidth = {$styles.content.textmedia.borderWidth}
-			borderPadding = {$styles.content.textmedia.borderPadding}
+		stdWrap {
+			# Setup the edit icon for content element "textmedia"
+			editIcons = tt_content: header [header_layout], bodytext, assets [imageorient|imagewidth|imageheight], [imagecols|imageborder], image_zoom
+			editIcons {
+				iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.textmedia
+			}
 		}
 	}
-	stdWrap {
-		# Setup the edit icon for content element "textmedia"
-		editIcons = tt_content: header [header_layout], bodytext, assets [imageorient|imagewidth|imageheight], [imagecols|imageborder], image_zoom
-		editIcons {
-			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.textmedia
+[ELSE]
+
+	[globalVar = LIT:lightbox = {$plugin.tx_nsalllightbox.settings.type}] 
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/lightbox.txt" />
+	[global]
+
+	[globalVar = LIT:fancybox = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/fancybox2.txt" />
+	[global]
+
+	[globalVar = LIT:colorbox = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/colorbox.txt" />
+	[global]
+
+	[globalVar = LIT:darkbox = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/darkbox.txt" />
+	[global]
+
+	[globalVar = LIT:prettyphoto = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/prettyphoto.txt" />
+	[global]
+
+	[globalVar = LIT:magnificpopups = {$plugin.tx_nsalllightbox.settings.type}]
+		<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/magnificpopup.txt" />
+	[global]
+
+	tt_content.textmedia >
+	tt_content.textmedia =< lib.fluidContent
+	tt_content.textmedia {
+		templateName = Textmedia
+		dataProcessing {
+			10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			10 {
+				references.fieldName = assets
+			}
+			20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
+			20 {
+				maxGalleryWidth = {$styles.content.textmedia.maxW}
+				maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
+				columnSpacing = {$styles.content.textmedia.columnSpacing}
+				borderWidth = {$styles.content.textmedia.borderWidth}
+				borderPadding = {$styles.content.textmedia.borderPadding}
+			}
+		}
+		stdWrap {
+			# Setup the edit icon for content element "textmedia"
+			editIcons = tt_content: header [header_layout], bodytext, assets [imageorient|imagewidth|imageheight], [imagecols|imageborder], image_zoom
+			editIcons {
+				iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.textmedia
+			}
 		}
 	}
-}
+[END]

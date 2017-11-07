@@ -1,53 +1,57 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: Includes.txt
+﻿.. include:: Includes.txt
 
 
 .. _start:
 
-=============================================================
-NITSAN Maintenance
-=============================================================
+=====================================
+Documentation for ext:ns_all_lightbox
+=====================================
 
-.. only:: html
+:Extension:    `ns_all_lightbox <https://extensions.typo3.org/extension/ns_all_lightbox/>`_
+               for TYPO3_
 
-	:Classification:
-		ns_all_lightbox
+:Version:      |release|
 
-	:Version:
-		|release|
+:Description:
+    This TYPO3 extension provides to configure many jQuery plugins eg., lightbox2, fancybox2, colorbox, prettyphoto, darkbox, magnific-popup. Latest version is supported in TYPO3 8 only. For TYPO3 6 and TYPO3 7 you should use ns_all_lightbox Version 1.1.0.
 
-	:Language:
-		en
+:Keywords:
+   lightbox, modalbox, nitsan, jquery, popup, lightbox2, fancybox2, colorbox, prettyphoto, darkbox, magnific-popup, jquery plugin, dialog box, effects, ns, jquery plugin, jquery lightbox, jquery modalbox
 
-	:Keywords:
-		lightbox, modalbox, nitsan, jquery, popup, lightbox2, fancybox2, colorbox, prettyphoto, darkbox, magnific-popup, jquery plugin, dialog box, effects, ns, jquery plugin, jquery lightbox, jquery modalbox
+:Author:       Sanjay Chauhan <sanjay@nitsan.in>
 
-	:Copyright:
-		2017
+:Company:
+   [NITSAN Technologies] http://www.nitsan.in/ \| http://www.itug.in/
 
-	:Author:
-		Sanjay Chuahan
+:License:
+   |cc-license| This work is licensed under a
+   `Creative Commons Attribution 4.0 International License
+   <http://creativecommons.org/licenses/by/4.0/>`_.
 
-	:License:
-		This document is published under the Open Content License
-		available from http://www.opencontent.org/opl.shtml
+:Context:
+   The content of this document is related to TYPO3_, a GNU/GPL CMS framework
+   available from https://typo3.org/.
 
-	:Rendered:
-		|today|
+:Repository:   https://github.com/nitsan-technologies/ns_all_lightbox
 
-	The content of this document is related to TYPO3,
-	a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
+:Contribute:   Please `report issues at Github
+               <https://github.com/nitsan-technologies/ns_all_lightbox/issues>`__.
+
+:Rendered:     |today|
 
 
-	**Table of Contents**
+
+.. |cc-license| image:: license.png
+                :alt: alt="Creative Commons License"
+                :target: http://creativecommons.org/licenses/by/4.0/
+
 
 .. toctree::
-	:maxdepth: 3
-	:titlesonly:
-	:glob:
+   :hidden:
 
-	AdministratorManual/Index
+   Sitemap/Index
+   Introduction/Index
+   Installation/Index
+   Configuration/Index
+   Support
+   Targets

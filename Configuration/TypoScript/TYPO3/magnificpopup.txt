@@ -1,0 +1,29 @@
+lib.fluidContent{
+	templateRootPaths.100 = EXT:ns_all_lightbox/Resources/Private/Templates/MagnificPopups/TYPO3/
+	partialRootPaths.100 = EXT:ns_all_lightbox/Resources/Private/Partials/MagnificPopups/TYPO3/
+}
+
+page.includeCSS{
+	magnificpopup = EXT:ns_all_lightbox/Resources/Public/magnific-popup/magnific-popup.css
+}
+
+page.includeJSFooter{
+	magnificpopup = EXT:ns_all_lightbox/Resources/Public/magnific-popup/jquery.magnific-popup.min.js
+}
+
+page.footerData {
+	1000 = TEXT
+	1000.value(
+		<script type='text/javascript'>
+			$('.ce-gallery').each(function() { 
+			    $(this).magnificPopup({
+			        delegate: 'a.maginific-popup',
+			        type: 'image',
+			        gallery: {
+			          enabled:true
+			        }
+			    });
+			});
+		</script>
+	)
+}
