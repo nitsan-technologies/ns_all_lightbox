@@ -13,7 +13,7 @@ Documentation for ext:ns_all_lightbox
 :Version:      |release|
 
 :Description:
-    This TYPO3 extension provides to configure many jQuery plugins eg., lightbox2, fancybox2, colorbox, prettyphoto, darkbox, magnific-popup. Latest version is supported in TYPO3 8 only. For TYPO3 6 and TYPO3 7 you should use ns_all_lightbox Version 1.1.0.
+    This TYPO3 extension provides to configure many jQuery plugins eg., lightbox2, fancybox2, colorbox, prettyphoto, darkbox, magnific-popup. 
 
 :Keywords:
    lightbox, modalbox, nitsan, jquery, popup, lightbox2, fancybox2, colorbox, prettyphoto, darkbox, magnific-popup, jquery plugin, dialog box, effects, ns, jquery plugin, jquery lightbox, jquery modalbox
