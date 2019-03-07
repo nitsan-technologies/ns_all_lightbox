@@ -1,7 +1,0 @@
-
-plugin.tx_nsalllightbox {
-	settings{
-		# cat=plugin.tx_nsalllightbox//b; type=options[Lightbox=lightbox,Fancybox=fancybox,Colorbox=colorbox,Darkbox=darkbox,Prettyphoto=prettyphoto,Magnific Popups=magnificpopups]; label = Select your plugin
-		type = lightbox
-	}
-}
