@@ -1,0 +1,27 @@
+lib.fluidContent{
+	partialRootPaths.100 = EXT:ns_all_lightbox/Resources/Private/Partials/Fancybox/TYPO3-7/
+}
+
+page.includeCSS{
+	fancybox = EXT:ns_all_lightbox/Resources/Public/fancybox2/jquery.fancybox.css
+	helperButton = EXT:ns_all_lightbox/Resources/Public/fancybox2/helpers/jquery.fancybox-buttons.css
+	helperthumbs = EXT:ns_all_lightbox/Resources/Public/fancybox2/helpers/jquery.fancybox-thumbs.css
+}
+
+page.includeJSFooter{
+	fancybox = EXT:ns_all_lightbox/Resources/Public/fancybox2/jquery.fancybox.pack.js
+	helperButton = EXT:ns_all_lightbox/Resources/Public/fancybox2/helpers/jquery.fancybox-buttons.js
+	helperThumb = EXT:ns_all_lightbox/Resources/Public/fancybox2/helpers/jquery.fancybox-thumbs.js
+	helperMedia = EXT:ns_all_lightbox/Resources/Public/fancybox2/helpers/jquery.fancybox-media.js
+}
+
+page.footerData {
+	1000 = TEXT
+	1000.value(
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+		</script>
+	)
+}

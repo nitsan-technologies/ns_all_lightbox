@@ -1,0 +1,11 @@
+lib.contentElement{
+	partialRootPaths.100 = EXT:ns_all_lightbox/Resources/Private/Partials/Lightbox/TYPO3/
+}
+
+page.includeCSS{
+	lightbox = EXT:ns_all_lightbox/Resources/Public/lightbox2/css/lightbox.css
+}
+
+page.includeJSFooter{
+	lightbox2 = EXT:ns_all_lightbox/Resources/Public/lightbox2/js/lightbox.js
+}

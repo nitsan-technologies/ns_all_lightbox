@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-08-03T12:31:30Z" product-name="ns_all_lightbox">
+		<header/>
+		<body>
+			<trans-unit id="settings.select_your_plugin" xml:space="preserve">
+				<source>Select Plugin Type</source>
+			</trans-unit>
+			<trans-unit id="settings.jquery" xml:space="preserve">
+				<source>Include jQuery Library</source>
+			</trans-unit>
+			<trans-unit id="settings.width" xml:space="preserve">
+				<source>Popup Image Maximum Width</source>
+			</trans-unit>
+			<trans-unit id="settings.height" xml:space="preserve">
+				<source>Popup Image Maximum Height</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

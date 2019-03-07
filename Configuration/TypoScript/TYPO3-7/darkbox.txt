@@ -1,0 +1,23 @@
+lib.fluidContent{
+	partialRootPaths.100 = EXT:ns_all_lightbox/Resources/Private/Partials/Darkbox/TYPO3-7/
+}
+
+page.includeCSS{
+	darkbox = EXT:ns_all_lightbox/Resources/Public/darkbox/darkbox.css
+}
+
+page.includeJSFooter{
+	darkbox = EXT:ns_all_lightbox/Resources/Public/darkbox/darkbox.js
+}
+
+page.footerData {
+	
+	1000 = TEXT
+	1000.value(
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				// $(".darkbox12").darkbox();
+			});
+		</script>
+	)
+}
