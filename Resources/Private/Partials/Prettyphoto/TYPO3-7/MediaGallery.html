@@ -64,7 +64,7 @@
 		<f:else>
 			<f:if condition="{data.image_zoom}">
 				<f:then>
-					<a href='<f:uri.image src="{column.media.publicUrl}" maxWidth="{settings.media.popup.width}" maxHeight="{settings.media.popup.height}" />' class='prettyphoto' data-gal='prettyPhoto[gal{data.uid}]'>
+					<a href='<f:uri.image src="{column.media.publicUrl}" maxWidth="{settings.media.popup.width}" maxHeight="{settings.media.popup.height}" />' class='prettyphoto' data-gal='prettyPhoto[gal{data.uid}]' title="{column.media.description}">
 						<f:render section="media" arguments="{_all}" />
 					</a>
 				</f:then>

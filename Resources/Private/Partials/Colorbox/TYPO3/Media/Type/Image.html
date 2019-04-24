@@ -9,7 +9,7 @@
 		<f:else>
 			<f:if condition="{data.image_zoom}">
 				<f:then>
-					<a class='colorbox' data-rel='colorbox[grup{data.uid}]' href='<f:uri.image src="{file.publicUrl}" maxWidth="{settings.media.popup.width}" maxHeight="{settings.media.popup.height}" />' >
+					<a class='colorbox' data-rel='colorbox[grup{data.uid}]' href='<f:uri.image src="{file.publicUrl}" maxWidth="{settings.media.popup.width}" maxHeight="{settings.media.popup.height}" />' title="{file.description}">
 						<f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
 					</a>
 				</f:then>

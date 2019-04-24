@@ -64,7 +64,7 @@
 		<f:else>
 			<f:if condition="{data.image_zoom}">
 				<f:then>
-					<a href='javascript:;' data-darkbox='<f:uri.image src="{column.media.publicUrl}" maxWidth="{settings.media.popup.width}" maxHeight="{settings.media.popup.height}" />' data-darkbox-group='darkbox{data.uid}' class="darkbox1">
+					<a href='javascript:;' data-darkbox='<f:uri.image src="{column.media.publicUrl}" maxWidth="{settings.media.popup.width}" maxHeight="{settings.media.popup.height}" />' data-darkbox-group='darkbox{data.uid}' class="darkbox1" data-darkbox-description="{column.media.description}">
 						<f:render section="media" arguments="{_all}" />
 					</a>
 				</f:then>
