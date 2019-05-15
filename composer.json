@@ -27,8 +27,14 @@
       "ns_all_lightbox": "self.version",
       "nitsan/ns-all-lightbox": "self.version"
   },
+  "config": {
+    "vendor-dir": ".Build/vendor/",
+    "bin-dir": ".Build/bin/"
+  },
   "extra": {
     "typo3/cms": {
+        "cms-package-dir": "{$vendor-dir}/typo3/cms",
+        "web-dir": ".Build/public",
         "extension-key": "ns_all_lightbox"
     }
   }
