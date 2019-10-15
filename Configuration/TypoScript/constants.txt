@@ -1,16 +1,13 @@
 
 plugin.tx_nsalllightbox {
-	settings{
+	settings {
 		# cat=plugin.tx_nsalllightbox//a; type=boolean; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.jquery
-      	jquery = 0
-
-      	# cat=plugin.tx_nsalllightbox//b; type=string; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.width
-      	width = 1024
-
-      	# cat=plugin.tx_nsalllightbox//c; type=string; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.height
-      	height = 768
-		
-		# cat=plugin.tx_nsalllightbox//d; type=options[Lightbox=lightbox,Fancybox=fancybox,Colorbox=colorbox,Darkbox=darkbox,Prettyphoto=prettyphoto,Magnific Popups=magnificpopups]; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.select_your_plugin
+		jquery = 0
+		# cat=plugin.tx_nsalllightbox//b; type=string; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.width
+		width = 1024
+		# cat=plugin.tx_nsalllightbox//c; type=string; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.height
+		height = 768
+		# cat=plugin.tx_nsalllightbox//d; type=options[Lightbox=lightbox,Fancybox=fancybox,Darkbox=darkbox]; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.select_your_plugin
 		type = lightbox
 	}
 }
