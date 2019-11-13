@@ -1,7 +1,7 @@
 {
   "name": "nitsan/ns-all-lightbox",
   "type": "typo3-cms-extension",
-  "description": "One of the only TYPO3 extension which provides to use most popular jQuery Lightbox/Modalbox at TYPO3 content elements. This TYPO3 extension provides to configure many jQuery plugins eg., lightbox2, fancybox2, colorbox, prettyphoto, darkbox, magnific-popup & more will be available in an upcoming version.",
+  "description": "One of the only TYPO3 extension which provides to use most popular jQuery Lightbox/Modalbox at TYPO3 content elements. This TYPO3 extension provides to configure many jQuery plugins eg., lightbox2, fancybox2, colorbox, prettyphoto, darkbox, magnific-popup. You can download PRO version for more-features & free-support at https://t3terminal.com/ns-all-in-one-lightbox-pro/",
   "license": "GPL-2.0+",
   "keywords": [
     "TYPO3 CMS",
@@ -24,7 +24,6 @@
     }
   },
   "replace": {
-      "ns_all_lightbox": "self.version",
       "nitsan/ns-all-lightbox": "self.version"
   },
   "config": {
