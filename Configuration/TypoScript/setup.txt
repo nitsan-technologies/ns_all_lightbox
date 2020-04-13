@@ -24,15 +24,15 @@ lib.fluidContent {
 }
 
 [compatVersion = 8.7.0]
-[globalVar = LIT:lightbox = {$plugin.tx_nsalllightbox.settings.type}] 
+[{$plugin.tx_nsalllightbox.settings.type} == 1] 
 <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/lightbox.txt" />
 [global]
 
-[globalVar = LIT:fancybox = {$plugin.tx_nsalllightbox.settings.type}]
+[{$plugin.tx_nsalllightbox.settings.type} == 2]
 <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/fancybox2.txt" />
 [global]
 
-[globalVar = LIT:darkbox = {$plugin.tx_nsalllightbox.settings.type}]
+[{$plugin.tx_nsalllightbox.settings.type} == 3]
 <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/darkbox.txt" />
 [global]
 
@@ -47,6 +47,6 @@ lib.contentElement {
 	}
 }
 
-[globalVar = LIT:1 = {$plugin.tx_nsalllightbox.settings.jquery}]
-page.includeJS.nsalllightboxjQuery = https://code.jquery.com/jquery-latest.min.js
+[{$plugin.tx_nsalllightbox.settings.jquery} == 1]
+	page.includeJS.lightBoxJquery = https://code.jquery.com/jquery-latest.min.js
 [global]
