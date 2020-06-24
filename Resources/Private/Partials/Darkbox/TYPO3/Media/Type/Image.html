@@ -9,7 +9,7 @@
 		<f:else>
 			<f:if condition="{data.image_zoom}">
 				<f:then>
-					<a href='javascript:;' data-darkbox='<f:uri.image src="{file.publicUrl}" maxWidth="{settings.media.popup.width}" maxHeight="{settings.media.popup.height}" />' data-darkbox-group='darkbox{data.uid}' class="darkbox1" data-darkbox-description="{file.description}">
+					<a href='javascript:;' data-darkbox='<f:uri.image image="{file}" maxWidth="{settings.media.popup.width}" maxHeight="{settings.media.popup.height}" />' data-darkbox-group='darkbox{data.uid}' class="darkbox1" data-darkbox-description="{file.description}">
 						<f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
 					</a>
 				</f:then>
