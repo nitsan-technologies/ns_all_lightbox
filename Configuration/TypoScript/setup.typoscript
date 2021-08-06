@@ -1,15 +1,15 @@
 
 
 [globalVar = LIT:lightbox = {$plugin.tx_nsalllightbox.settings.type}] 
-<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/lightbox.txt" />
+<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/lightbox.typoscript" />
 [global]
 
 [globalVar = LIT:fancybox = {$plugin.tx_nsalllightbox.settings.type}]
-<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/fancybox2.txt" />
+<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/fancybox2.typoscript" />
 [global]
 
 [globalVar = LIT:darkbox = {$plugin.tx_nsalllightbox.settings.type}]
-<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/darkbox.txt" />
+<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/darkbox.typoscript" />
 [global]
 
 lib.fluidContent {
@@ -25,15 +25,15 @@ lib.fluidContent {
 
 [compatVersion = 8.7.0]
 [{$plugin.tx_nsalllightbox.settings.type} == 1] 
-<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/lightbox.txt" />
+<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/lightbox.typoscript" />
 [global]
 
 [{$plugin.tx_nsalllightbox.settings.type} == 2]
-<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/fancybox2.txt" />
+<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/fancybox2.typoscript" />
 [global]
 
 [{$plugin.tx_nsalllightbox.settings.type} == 3]
-<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/darkbox.txt" />
+<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/darkbox.typoscript" />
 [global]
 
 lib.contentElement {
