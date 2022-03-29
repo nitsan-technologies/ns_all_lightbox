@@ -1,0 +1,53 @@
+[globalVar = LIT:1 = {$plugin.tx_nsalllightbox.settings.type}]
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/lightbox.typoscript">
+[global]
+
+[globalVar = LIT:2 = {$plugin.tx_nsalllightbox.settings.type}]
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/fancybox2.typoscript">
+[global]
+
+[globalVar = LIT:3 = {$plugin.tx_nsalllightbox.settings.type}]
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/colorbox.typoscript">
+[global]
+
+[compatVersion = 8.7.0]
+[globalVar = LIT:1 = {$plugin.tx_nsalllightbox.settings.type}]
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/lightbox.typoscript">
+[global]
+
+[globalVar = LIT:2 = {$plugin.tx_nsalllightbox.settings.type}]
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/fancybox2.typoscript">
+[global]
+
+[globalVar = LIT:3 = {$plugin.tx_nsalllightbox.settings.type}]
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/colorbox.typoscript">
+[global]
+
+lib.contentElement {
+    settings {
+        media {
+            popup {
+                width = {$plugin.tx_nsalllightbox.settings.width}
+                height = {$plugin.tx_nsalllightbox.settings.height}
+            }
+        }
+    }
+}
+
+lib.fluidContent {
+    settings {
+        media {
+            popup {
+                width = {$plugin.tx_nsalllightbox.settings.width}
+                height = {$plugin.tx_nsalllightbox.settings.height}
+            }
+        }
+    }
+}
+
+page {
+    includeJSLibs {
+        nsfjquery = EXT:ns_all_lightbox/Resources/Public/jQuery/jQuery.js
+        nsfjquery.if.isTrue = {$plugin.tx_nsalllightbox.settings.jquery}
+    }
+}
