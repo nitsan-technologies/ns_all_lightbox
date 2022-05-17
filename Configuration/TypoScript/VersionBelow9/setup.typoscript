@@ -7,7 +7,7 @@
 [global]
 
 [globalVar = LIT:3 = {$plugin.tx_nsalllightbox.settings.type}]
-    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/colorbox.typoscript">
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/darkbox.typoscript">
 [global]
 
 [compatVersion = 8.7.0]
@@ -20,7 +20,7 @@
 [global]
 
 [globalVar = LIT:3 = {$plugin.tx_nsalllightbox.settings.type}]
-    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/colorbox.typoscript">
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/darkbox.typoscript">
 [global]
 
 lib.contentElement {

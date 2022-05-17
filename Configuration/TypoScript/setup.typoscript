@@ -7,7 +7,7 @@
 [global]
 
 ["{$plugin.tx_nsalllightbox.settings.type}" == "3"]
-    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/colorbox.typoscript">
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/darkbox.typoscript">
 [global]
 
 lib.fluidContent {
