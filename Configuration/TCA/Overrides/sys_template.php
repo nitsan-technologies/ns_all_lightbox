@@ -1,5 +1,6 @@
 <?php
-defined('TYPO3_MODE') or die();
+
+defined('TYPO3_MODE') || defined('TYPO3') or die();
 
 $extKey = 'ns_all_lightbox';
 
