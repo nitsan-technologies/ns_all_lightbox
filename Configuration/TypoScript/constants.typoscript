@@ -1,4 +1,3 @@
-
 plugin.tx_nsalllightbox {
 	settings {
 		# cat=plugin.tx_nsalllightbox//a; type=boolean; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.jquery
@@ -7,7 +6,7 @@ plugin.tx_nsalllightbox {
 		width = 1024
 		# cat=plugin.tx_nsalllightbox//c; type=string; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.height
 		height = 768
-		# cat=plugin.tx_nsalllightbox//d; type=options[Lightbox=1,Fancybox=2,Darkbox=3]; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.select_your_plugin
+		# cat=plugin.tx_nsalllightbox//d; type=options[Lightbox=1,Fancybox=2,Darkbox=3,Swipebox=4,Featherlight=5]; label= LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.select_your_plugin
 		type = 1
 	}
 }

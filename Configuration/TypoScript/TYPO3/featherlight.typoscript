@@ -1,0 +1,41 @@
+lib.contentElement {
+    partialRootPaths.100 = EXT:ns_all_lightbox/Resources/Private/Partials/Featherlight/TYPO3/
+}
+
+page {
+    includeCSS {
+        swipebox = EXT:ns_all_lightbox/Resources/Public/featherlight/src/featherlight.css
+        swipeboxMin = EXT:ns_all_lightbox/Resources/Public/featherlight/src/featherlight.gallery.css
+    }
+
+    includeJSFooter {
+        swipebox = EXT:ns_all_lightbox/Resources/Public/featherlight/src/featherlight.js
+        swipeboxMin = EXT:ns_all_lightbox/Resources/Public/featherlight/src/featherlight.gallery.js
+    }
+
+    footerData {
+        1000 = TEXT
+        1000.value (
+			<script type='text/javascript'>
+				$(document).ready(function() {
+					$('.gallery').featherlightGallery();
+				});
+			</script>
+        )
+        5000 = TEXT
+        5000.value (
+            <script>
+                $('.gallery').featherlightGallery({
+                    gallery: {
+                        previousIcon: '«',
+                        nextIcon: '»',
+                        galleryFadeIn: 300,
+		                openSpeed: 300
+                    },
+                    variant: 'featherlight-gallery'
+                });
+            </script>
+        )
+    }
+}
+
