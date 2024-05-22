@@ -10,6 +10,14 @@
     <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/darkbox.typoscript">
 [global]
 
+["{$plugin.tx_nsalllightbox.settings.type}" == "4"]
+	<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/swipebox.typoscript">
+[global]
+
+["{$plugin.tx_nsalllightbox.settings.type}" == "5"]
+	<INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/featherlight.typoscript">
+[global]
+
 lib.fluidContent {
 	settings {
 		media {
