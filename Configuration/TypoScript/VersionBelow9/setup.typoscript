@@ -7,7 +7,7 @@
 [global]
 
 [globalVar = LIT:3 = {$plugin.tx_nsalllightbox.settings.type}]
-    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/colorbox.typoscript">
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/darkbox.typoscript">
 [global]
 
 [globalVar = LIT:4 = {$plugin.tx_nsalllightbox.settings.type}]
@@ -18,7 +18,7 @@
     <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3-7/featherlight.typoscript">
 [global]
 
-[compatVersion = 8.7.0]
+[compatVersion("8.7.0")]
 [globalVar = LIT:1 = {$plugin.tx_nsalllightbox.settings.type}]
     <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/lightbox.typoscript">
 [global]
@@ -28,7 +28,7 @@
 [global]
 
 [globalVar = LIT:3 = {$plugin.tx_nsalllightbox.settings.type}]
-    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/colorbox.typoscript">
+    <INCLUDE_TYPOSCRIPT:source="FILE:EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/darkbox.typoscript">
 [global]
 
 [globalVar = LIT:4 = {$plugin.tx_nsalllightbox.settings.type}]
