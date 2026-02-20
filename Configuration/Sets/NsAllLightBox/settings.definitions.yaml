@@ -1,0 +1,43 @@
+categories:
+  ns_all_lightbox:
+    label: All Lightbox
+
+  ns_all_lightbox.configuration:
+    label: Main Configuration
+    parent: ns_all_lightbox
+
+settings:
+
+  ##################################################
+  # Main COnfiguration
+  ##################################################
+
+  ns_all_lightbox.configuration.jquery:
+    label: LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.jquery
+    category: ns_all_lightbox.configuration
+    type: bool
+    default: false
+
+  ns_all_lightbox.configuration.width:
+    label: LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.width
+    category: ns_all_lightbox.configuration
+    type: string
+    default: '1024'  
+
+  ns_all_lightbox.configuration.height:
+    label: LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.height
+    category: ns_all_lightbox.configuration
+    type: string
+    default: '768'
+
+  ns_all_lightbox.configuration.type:
+    label: LLL:EXT:ns_all_lightbox/Resources/Private/Language/locallang_db.xlf:settings.select_your_plugin
+    category: ns_all_lightbox.configuration
+    type: string
+    default: '1'
+    enum:
+      1: Light Box
+      2: Fancy Box
+      3: Dark Box
+      4: Swipe Box
+      5: Feather Light

@@ -12,10 +12,10 @@ $EM_CONF['ns_all_lightbox'] = [
     'internal' => '',
     'uploadfolder' => '0',
     'createDirs' => '',
-    'version' => '13.1.0',
+    'version' => '14.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.4.0-14.0.1',
+            'typo3' => '12.4.0-14.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],

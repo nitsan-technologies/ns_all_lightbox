@@ -1,0 +1,39 @@
+@import 'EXT:ns_all_lightbox/Configuration/TypoScript/setup.typoscript'
+
+["{$ns_all_lightbox.configuration.type}" == "1"]
+	@import 'EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/lightbox.typoscript'
+[global]
+
+["{$ns_all_lightbox.configuration.type}" == "2"]
+	@import 'EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/fancybox2.typoscript'
+[global]
+
+["{$ns_all_lightbox.configuration.type}" == "3"]
+	@import 'EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/darkbox.typoscript'
+[global]
+
+["{$ns_all_lightbox.configuration.type}" == "4"]
+	@import 'EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/swipebox.typoscript'
+[global]
+
+["{$ns_all_lightbox.configuration.type}" == "5"]
+	@import 'EXT:ns_all_lightbox/Configuration/TypoScript/TYPO3/featherlight.typoscript'
+[global]
+
+lib.contentElement {
+	settings {
+		media {
+			popup {
+				width = {$ns_all_lightbox.configuration.width}
+				height = {$ns_all_lightbox.configuration.height}
+			}
+		}
+	}
+}
+
+page {
+	includeJSLibs {
+		nsfjquery = EXT:ns_all_lightbox/Resources/Public/jQuery/jQuery.js
+		nsfjquery.if.isTrue = {$ns_all_lightbox.configuration.jquery}
+	}
+}
