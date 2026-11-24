@@ -59,8 +59,9 @@
           src = $cur.data("darkbox");
 
       $darkbox.addClass("show spinner");
-      $darkboxDescription.html(description);
-      $darkboxStats.html(n < 2 ? "" : (c+1) +"/"+ n);
+      // Use text() so media descriptions cannot inject HTML into the FE caption.
+      $darkboxDescription.text(description == null ? "" : String(description));
+      $darkboxStats.text(n < 2 ? "" : (c+1) +"/"+ n);
 
       $("<img/>").on("load", function() {
         var bigger = (this.width > docW || this.height > docH);

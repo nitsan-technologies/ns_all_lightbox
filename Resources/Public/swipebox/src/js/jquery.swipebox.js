@@ -719,7 +719,8 @@
 
 				if ( title ) {
 					$( '#swipebox-top-bar' ).show();
-					$( '#swipebox-title' ).append( title );
+					// text() avoids HTML injection if a title attribute is present.
+					$( '#swipebox-title' ).text( title );
 				} else {
 					$( '#swipebox-top-bar' ).hide();
 				}
