@@ -21,7 +21,13 @@ page {
 		1000.value (
 			<script type='text/javascript'>
 				$(document).ready(function() {
-					$(".fancybox").fancybox();
+					$(".fancybox").fancybox({
+						beforeShow: function () {
+							if (this.title) {
+								this.title = $('<div/>').text(String(this.title)).html();
+							}
+						}
+					});
 				});
 			</script>
 		)
